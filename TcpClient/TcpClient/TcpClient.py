@@ -28,13 +28,8 @@ while True:
         elif firstNumber == secondNumber and case == 'Random':
             print('First and second is equal')
     
-        if case == 'Add':
+        if case == 'Add' or case == 'Subtract':
             orderImportant = False
-        
-        if firstNumber > secondNumber and case == 'Subtract':
-            orderImportant = False
-        elif firstNumber < secondNumber and case == 'Subtract':
-            print('First number must be greater than second number')
 
 
     sendString = str(case+','+str(firstNumber)+','+str(secondNumber)).encode()
