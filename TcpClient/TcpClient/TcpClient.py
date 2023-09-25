@@ -25,6 +25,8 @@ while True:
             orderImportant = False
         elif secondNumber < firstNumber and case == 'Random':
             print('Second number must be greater than first number')
+        elif firstNumber == secondNumber and case == 'Random':
+            print('First and second is equal')
     
         if case == 'Add':
             orderImportant = False
